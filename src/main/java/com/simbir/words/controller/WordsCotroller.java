@@ -22,6 +22,7 @@ public class WordsCotroller {
     ServiceForWords serviceForWords;
     static final Logger log =
             LoggerFactory.getLogger(WordsCotroller.class);
+
     @GetMapping(path = UserLinks.GET_WORDS)
     @ResponseBody
     public ResponseEntity<TreeMap<String, Integer>> getMeUniqueWordFromThisSite(
@@ -32,6 +33,7 @@ public class WordsCotroller {
         return ResponseEntity.ok(response);
     }
 
+    //TODO добавить в схему и имя сайта
     @PostMapping(path = UserLinks.SAVE_WORDS)
     @ResponseBody
     public ResponseEntity<?> saveWordInDB(
@@ -40,7 +42,6 @@ public class WordsCotroller {
         log.info("Attempt to save to the database.");
         try {
             if (request != null) {
-
                 System.out.println("WordsInDb ");
                 final boolean result = serviceForWords.save(request);
                 System.out.println("result " + result);

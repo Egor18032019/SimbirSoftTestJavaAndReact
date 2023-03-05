@@ -19,7 +19,7 @@ import java.util.logging.Logger;
 @Service
 public class ServiceForWords implements Words {
     @Autowired
-    ItemRepository groceryItemRepo;
+    ItemRepository itemRepository;
 
     private static final Logger log = Logger.getLogger(ServiceForWords.class.getName());
     private final static char[] DELIMITERS = {' ', ',', '.', '!', '?', '"', ';', ':', '[', ']', '(', ')', '\n', '\r', '\t'};
@@ -68,7 +68,7 @@ public class ServiceForWords implements Words {
     public boolean save(TreeMap<String, Integer> words) {
         System.out.println("ServiceForWords ");
         WordsInDb foo = new WordsInDb(words);
-        groceryItemRepo.insert(foo);
+        itemRepository.insert(foo);
         return true;
         };
 

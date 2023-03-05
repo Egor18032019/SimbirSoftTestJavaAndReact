@@ -15,4 +15,6 @@ public class AppController {
         return "forward:/index.html";
     }
 
+
+    //TODO получить все сохранялки.и +  получить сохранялку по имени сайта
 }
