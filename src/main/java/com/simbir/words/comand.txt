@@ -1,7 +1,7 @@
 show collections
 db.groceryitems.find()
 db.groceryitems.deleteOne({_id:"61e41f0170af56476e732395"})
-
+db.groceryitems.deleteOne({url:null})
 
 https://www.youtube.com/watch?v=ANj7qUgzNq4&t=491s
 

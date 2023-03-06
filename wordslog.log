@@ -508,3 +508,92 @@ Caused by: java.net.SocketTimeoutException: Read timed out
 2023-03-06 15:11:16 [http-nio-8080-exec-9] INFO  c.s.words.controller.WordsCotroller - Attempt to save to the database.
 2023-03-06 15:11:16 [http-nio-8080-exec-9] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:3, serverValue:15}] to localhost:27017
 2023-03-06 15:11:16 [http-nio-8080-exec-9] INFO  c.s.words.controller.WordsCotroller - Save to the database.
+2023-03-06 15:59:00 [restartedMain] INFO  com.simbir.words.WordsApplication - Starting WordsApplication using Java 18.0.2 on WIN-6A6S5HBJLLL with PID 12300 (C:\Hobby\Git\SimbirSoftTestJavaAndReact\target\classes started by User in C:\Hobby\Git\SimbirSoftTestJavaAndReact)
+2023-03-06 15:59:00 [restartedMain] INFO  com.simbir.words.WordsApplication - No active profile set, falling back to default profiles: default
+2023-03-06 15:59:00 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-03-06 15:59:00 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-03-06 15:59:03 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2023-03-06 15:59:03 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 156 ms. Found 1 MongoDB repository interfaces.
+2023-03-06 15:59:05 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2023-03-06 15:59:05 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-03-06 15:59:05 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.56]
+2023-03-06 15:59:06 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-03-06 15:59:06 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 5343 ms
+2023-03-06 15:59:06 [restartedMain] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2023-03-06 15:59:06 [cluster-ClusterId{value='6405c77a7eacc170edf7150e', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:17}] to localhost:27017
+2023-03-06 15:59:06 [cluster-rtt-ClusterId{value='6405c77a7eacc170edf7150e', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:2, serverValue:16}] to localhost:27017
+2023-03-06 15:59:06 [cluster-ClusterId{value='6405c77a7eacc170edf7150e', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=17, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=60177100}
+2023-03-06 15:59:07 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2023-03-06 15:59:09 [restartedMain] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+2023-03-06 15:59:10 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2023-03-06 15:59:10 [restartedMain] INFO  com.simbir.words.WordsApplication - Started WordsApplication in 11.735 seconds (JVM running for 14.352)
+2023-03-06 15:59:14 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-06 15:59:14 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-03-06 15:59:14 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2023-03-06 15:59:14 [http-nio-8080-exec-1] INFO  c.s.words.controller.WordsCotroller - Request for http://localhost:3000/realization .
+2023-03-06 15:59:15 [http-nio-8080-exec-1] INFO  c.s.words.service.ServiceForWords - INFO We made a get request and received the data with http://localhost:3000/realization
+2023-03-06 15:59:15 [http-nio-8080-exec-1] INFO  c.s.words.service.ServiceForWords - INFO we received the data and started analyzing this.
+2023-03-06 15:59:15 [http-nio-8080-exec-1] INFO  com.simbir.words.to.GetUniqueWords - INFO get unique words 
+2023-03-06 15:59:15 [http-nio-8080-exec-1] INFO  c.s.words.service.ServiceForWords - INFO The end analyzing this data.
+2023-03-06 16:02:58 [http-nio-8080-exec-2] INFO  c.s.words.controller.WordsCotroller - Request for http://localhost:3000/realization .
+2023-03-06 16:02:58 [http-nio-8080-exec-2] INFO  c.s.words.service.ServiceForWords - INFO We made a get request and received the data with http://localhost:3000/realization
+2023-03-06 16:02:58 [http-nio-8080-exec-2] INFO  c.s.words.service.ServiceForWords - INFO we received the data and started analyzing this.
+2023-03-06 16:02:58 [http-nio-8080-exec-2] INFO  com.simbir.words.to.GetUniqueWords - INFO get unique words 
+2023-03-06 16:02:58 [http-nio-8080-exec-2] INFO  c.s.words.service.ServiceForWords - INFO The end analyzing this data.
+2023-03-06 16:03:02 [http-nio-8080-exec-3] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'url' for method parameter type String is not present]
+2023-03-06 16:03:41 [http-nio-8080-exec-4] INFO  c.s.words.controller.WordsCotroller - Request for http://localhost:3000/realization .
+2023-03-06 16:03:41 [http-nio-8080-exec-4] INFO  c.s.words.service.ServiceForWords - INFO We made a get request and received the data with http://localhost:3000/realization
+2023-03-06 16:03:41 [http-nio-8080-exec-4] INFO  c.s.words.service.ServiceForWords - INFO we received the data and started analyzing this.
+2023-03-06 16:03:41 [http-nio-8080-exec-4] INFO  com.simbir.words.to.GetUniqueWords - INFO get unique words 
+2023-03-06 16:03:41 [http-nio-8080-exec-4] INFO  c.s.words.service.ServiceForWords - INFO The end analyzing this data.
+2023-03-06 16:03:55 [http-nio-8080-exec-5] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'url' for method parameter type String is not present]
+2023-03-06 16:06:01 [http-nio-8080-exec-6] INFO  c.s.words.controller.WordsCotroller - Request for http://localhost:3000/realization .
+2023-03-06 16:06:01 [http-nio-8080-exec-6] INFO  c.s.words.service.ServiceForWords - INFO We made a get request and received the data with http://localhost:3000/realization
+2023-03-06 16:06:01 [http-nio-8080-exec-6] INFO  c.s.words.service.ServiceForWords - INFO we received the data and started analyzing this.
+2023-03-06 16:06:01 [http-nio-8080-exec-6] INFO  com.simbir.words.to.GetUniqueWords - INFO get unique words 
+2023-03-06 16:06:01 [http-nio-8080-exec-6] INFO  c.s.words.service.ServiceForWords - INFO The end analyzing this data.
+2023-03-06 16:06:08 [http-nio-8080-exec-7] INFO  c.s.words.controller.WordsCotroller - Attempt to save to the database.
+2023-03-06 16:06:09 [http-nio-8080-exec-7] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:3, serverValue:18}] to localhost:27017
+2023-03-06 16:06:09 [http-nio-8080-exec-7] INFO  c.s.words.controller.WordsCotroller - Save to the database.
+2023-03-06 16:12:50 [restartedMain] INFO  com.simbir.words.WordsApplication - Starting WordsApplication using Java 18.0.2 on WIN-6A6S5HBJLLL with PID 2920 (C:\Hobby\Git\SimbirSoftTestJavaAndReact\target\classes started by User in C:\Hobby\Git\SimbirSoftTestJavaAndReact)
+2023-03-06 16:12:50 [restartedMain] INFO  com.simbir.words.WordsApplication - No active profile set, falling back to default profiles: default
+2023-03-06 16:12:50 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-03-06 16:12:50 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-03-06 16:12:53 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2023-03-06 16:12:53 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 142 ms. Found 1 MongoDB repository interfaces.
+2023-03-06 16:12:55 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2023-03-06 16:12:55 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-03-06 16:12:55 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.56]
+2023-03-06 16:12:55 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-03-06 16:12:55 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 4719 ms
+2023-03-06 16:12:55 [restartedMain] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2023-03-06 16:12:56 [cluster-ClusterId{value='6405cab7dae83151d4878c94', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:2, serverValue:19}] to localhost:27017
+2023-03-06 16:12:56 [cluster-rtt-ClusterId{value='6405cab7dae83151d4878c94', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:20}] to localhost:27017
+2023-03-06 16:12:56 [cluster-ClusterId{value='6405cab7dae83151d4878c94', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=17, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=91010000}
+2023-03-06 16:12:56 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2023-03-06 16:12:57 [restartedMain] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+2023-03-06 16:12:59 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2023-03-06 16:12:59 [restartedMain] INFO  com.simbir.words.WordsApplication - Started WordsApplication in 10.361 seconds (JVM running for 13.099)
+2023-03-06 16:13:18 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-06 16:13:18 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-03-06 16:13:18 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 4 ms
+2023-03-06 16:13:25 [http-nio-8080-exec-8] INFO  c.s.words.controller.WordsCotroller - Request for http://localhost:8080/realization .
+2023-03-06 16:13:25 [http-nio-8080-exec-8] INFO  c.s.words.service.ServiceForWords - INFO We made a get request and received the data with http://localhost:8080/realization
+2023-03-06 16:13:25 [http-nio-8080-exec-8] INFO  c.s.words.service.ServiceForWords - INFO we received the data and started analyzing this.
+2023-03-06 16:13:25 [http-nio-8080-exec-8] INFO  com.simbir.words.to.GetUniqueWords - INFO get unique words 
+2023-03-06 16:13:25 [http-nio-8080-exec-8] INFO  c.s.words.service.ServiceForWords - INFO The end analyzing this data.
+2023-03-06 16:13:38 [http-nio-8080-exec-10] INFO  c.s.words.controller.WordsCotroller - Request for https://github.com/Egor18032019/SimbirSoftTestJavaAndReact/blob/building/src/main/ui/src/App.css .
+2023-03-06 16:13:39 [http-nio-8080-exec-1] INFO  c.s.words.controller.WordsCotroller - Attempt to save to the database.
+2023-03-06 16:13:39 [http-nio-8080-exec-1] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:3, serverValue:21}] to localhost:27017
+2023-03-06 16:13:39 [http-nio-8080-exec-1] INFO  c.s.words.controller.WordsCotroller - Save to the database.
+2023-03-06 16:13:40 [http-nio-8080-exec-10] INFO  c.s.words.service.ServiceForWords - INFO We made a get request and received the data with https://github.com/Egor18032019/SimbirSoftTestJavaAndReact/blob/building/src/main/ui/src/App.css
+2023-03-06 16:13:40 [http-nio-8080-exec-10] INFO  c.s.words.service.ServiceForWords - INFO we received the data and started analyzing this.
+2023-03-06 16:13:40 [http-nio-8080-exec-10] INFO  com.simbir.words.to.GetUniqueWords - INFO get unique words 
+2023-03-06 16:13:40 [http-nio-8080-exec-10] INFO  c.s.words.service.ServiceForWords - INFO The end analyzing this data.
+2023-03-06 16:14:19 [http-nio-8080-exec-4] INFO  c.s.words.controller.WordsCotroller - Attempt to save to the database.
+2023-03-06 16:14:19 [http-nio-8080-exec-4] INFO  c.s.words.controller.WordsCotroller - Save to the database.
+2023-03-06 16:15:09 [http-nio-8080-exec-8] INFO  c.s.words.controller.WordsCotroller - Request for https://medium.com/bb-tutorials-and-thoughts/how-to-build-rest-api-with-spring-boot-and-mongodb-d8ebc658ffe3 .
+2023-03-06 16:15:09 [http-nio-8080-exec-8] INFO  c.s.words.service.ServiceForWords - INFO We made a get request and received the data with https://medium.com/bb-tutorials-and-thoughts/how-to-build-rest-api-with-spring-boot-and-mongodb-d8ebc658ffe3
+2023-03-06 16:15:09 [http-nio-8080-exec-8] INFO  c.s.words.service.ServiceForWords - INFO we received the data and started analyzing this.
+2023-03-06 16:15:09 [http-nio-8080-exec-8] INFO  com.simbir.words.to.GetUniqueWords - INFO get unique words 
+2023-03-06 16:15:09 [http-nio-8080-exec-8] INFO  c.s.words.service.ServiceForWords - INFO The end analyzing this data.
