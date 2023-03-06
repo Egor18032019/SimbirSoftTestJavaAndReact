@@ -30,6 +30,7 @@ public class WordsCotroller {
     ) {
         log.info("Request for " + url + " .");
         TreeMap<String, Integer> response = serviceForWords.getUniqueWordFromUrl(url);
+        //TODO если нет чего то выдавать 400 ошибку и пояснение
         return ResponseEntity.ok(response);
     }
 
@@ -37,14 +38,14 @@ public class WordsCotroller {
     @PostMapping(path = UserLinks.SAVE_WORDS)
     @ResponseBody
     public ResponseEntity<?> saveWordInDB(
-            @RequestParam(value = "url" ) String url,
+            @RequestParam(value = "url") String url,
             @RequestBody TreeMap<String, Integer> request
     ) {
         log.info("Attempt to save to the database.");
         try {
             if (request != null) {
                 System.out.println("WordsInDb ");
-                final boolean result = serviceForWords.save(request,url);
+                final boolean result = serviceForWords.save(request, url);
                 System.out.println("result " + result);
                 log.info("Save to the database.");
                 return new ResponseEntity<>(HttpStatus.OK);
