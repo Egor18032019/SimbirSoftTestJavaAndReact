@@ -65,13 +65,15 @@ public class ServiceForWords implements Words {
         return response;
     }
 
-    public boolean save(TreeMap<String, Integer> words) {
+    public boolean save(TreeMap<String, Integer> words, String url) {
         System.out.println("ServiceForWords ");
-        WordsInDb foo = new WordsInDb(words);
+        WordsInDb foo = new WordsInDb(words, url);
         itemRepository.insert(foo);
         return true;
-        };
-
     }
+
+    ;
+
+}
 
 

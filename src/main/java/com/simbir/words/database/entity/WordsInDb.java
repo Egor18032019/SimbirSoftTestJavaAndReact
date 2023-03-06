@@ -10,10 +10,12 @@ import java.util.TreeMap;
 public class WordsInDb {
     @Id
     private String id;
+    private String url;
     private TreeMap<String, Integer> words;
 
-    public WordsInDb(TreeMap<String, Integer> words) {
+    public WordsInDb(TreeMap<String, Integer> words, String url) {
         super();
         this.words = words;
+        this.url = url;
     }
 }
