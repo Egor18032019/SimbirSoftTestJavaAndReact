@@ -1,0 +1,15 @@
+version: '1'
+services:
+  app:
+    build: .
+    container_name: words
+    depends_on:
+      - mongodb_container
+    ports:
+      - target: 8080
+        published: 8080
+  mongodb_container:
+    image: mongo:latest
+    ports:
+      - 27017:27017
+

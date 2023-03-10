@@ -6,7 +6,7 @@ import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.print;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
-public class RequestControllerTest extends AbstractRequestControllerTest {
+public class RequestControllerTest extends AbstractBaseClass {
     @Test
     void getFirstPage() throws Exception {
         perform(MockMvcRequestBuilders.get("/"))

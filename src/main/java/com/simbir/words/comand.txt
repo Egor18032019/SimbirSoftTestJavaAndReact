@@ -3,6 +3,10 @@ db.groceryitems.find()
 db.groceryitems.deleteOne({_id:"61e41f0170af56476e732395"})
 db.groceryitems.deleteOne({url:null})
 
-https://www.youtube.com/watch?v=ANj7qUgzNq4&t=491s
+docker exec -it <container-name> bash
+docker run -it -v mongodata:/data/db -p 27017:27017 --name mongodb -d mongo
+docker exec -it mongodb bash
+$ mongo -u root -p rootpassword --authenticationDatabase tasks
 
+https://www.youtube.com/watch?v=ANj7qUgzNq4&t=491s
 https://docs.github.com/ru/actions/automating-builds-and-tests/building-and-testing-java-with-maven

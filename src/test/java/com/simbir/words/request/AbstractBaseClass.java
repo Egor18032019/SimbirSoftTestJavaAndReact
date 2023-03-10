@@ -8,7 +8,6 @@ import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.ResultActions;
 import org.springframework.test.web.servlet.request.MockHttpServletRequestBuilder;
 import org.springframework.test.web.servlet.setup.MockMvcBuilders;
-import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.context.WebApplicationContext;
 import org.springframework.web.filter.CharacterEncodingFilter;
 
@@ -16,7 +15,7 @@ import javax.annotation.PostConstruct;
 
 @SpringBootTest
  @AutoConfigureMockMvc
-public abstract class AbstractRequestControllerTest {
+public abstract class AbstractBaseClass {
 
     private static final CharacterEncodingFilter CHARACTER_ENCODING_FILTER = new CharacterEncodingFilter();
 
@@ -36,6 +35,7 @@ public abstract class AbstractRequestControllerTest {
                 .webAppContextSetup(webApplicationContext)
                 .addFilter(CHARACTER_ENCODING_FILTER)
                 .build();
+
     }
 
     protected ResultActions perform(MockHttpServletRequestBuilder builder) throws Exception {
