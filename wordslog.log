@@ -1,9 +1,16 @@
-2023-03-10 13:09:22 [main] INFO  c.s.w.request.RequestControllerTest - Starting RequestControllerTest using Java 18.0.2 on WIN-6A6S5HBJLLL with PID 5936 (started by User in C:\Hobby\Git\SimbirSoftTestJavaAndReact)
-2023-03-10 13:09:22 [main] INFO  c.s.w.request.RequestControllerTest - No active profile set, falling back to default profiles: default
-2023-03-10 13:09:26 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
-2023-03-10 13:09:26 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 170 ms. Found 1 MongoDB repository interfaces.
-2023-03-10 13:09:28 [main] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
-2023-03-10 13:09:28 [cluster-ClusterId{value='640ae5b85ed8b25d84d4cfe9', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Exception in monitor thread while connecting to server localhost:27017
+2023-03-17 13:27:08 [restartedMain] INFO  com.simbir.words.WordsApplication - Starting WordsApplication using Java 18.0.2 on WIN-6A6S5HBJLLL with PID 8932 (C:\Hobby\Git\SimbirSoftTestJavaAndReact\target\classes started by User in C:\Hobby\Git\SimbirSoftTestJavaAndReact)
+2023-03-17 13:27:08 [restartedMain] INFO  com.simbir.words.WordsApplication - No active profile set, falling back to default profiles: default
+2023-03-17 13:27:08 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-03-17 13:27:08 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-03-17 13:27:10 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2023-03-17 13:27:11 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 101 ms. Found 1 MongoDB repository interfaces.
+2023-03-17 13:27:12 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2023-03-17 13:27:12 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-03-17 13:27:12 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.56]
+2023-03-17 13:27:12 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-03-17 13:27:12 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3782 ms
+2023-03-17 13:27:12 [restartedMain] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2023-03-17 13:27:13 [cluster-ClusterId{value='641424609372cf0f50baf409', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Exception in monitor thread while connecting to server localhost:27017
 com.mongodb.MongoSocketOpenException: Exception opening socket
 	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:70)
 	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:180)
@@ -21,45 +28,54 @@ Caused by: java.net.ConnectException: Connection refused: no further information
 	at com.mongodb.internal.connection.SocketStream.initializeSocket(SocketStream.java:79)
 	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:65)
 	... 4 common frames omitted
-2023-03-10 13:09:33 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
-2023-03-10 13:09:36 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
-2023-03-10 13:09:36 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
-2023-03-10 13:09:36 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 3 ms
-2023-03-10 13:09:36 [main] INFO  c.s.w.request.RequestControllerTest - Started RequestControllerTest in 14.811 seconds (JVM running for 18.322)
-2023-03-10 13:09:36 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
-2023-03-10 13:09:36 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
-2023-03-10 13:09:36 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 6 ms
-2023-03-10 13:09:38 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
-2023-03-10 13:09:38 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
-2023-03-10 13:09:38 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 6 ms
-2023-03-10 13:09:38 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.simbir.words.WordsApplicationTests], using SpringBootContextLoader
-2023-03-10 13:09:38 [main] INFO  o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [com.simbir.words.WordsApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
-2023-03-10 13:09:38 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.simbir.words.WordsApplicationTests]: WordsApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2023-03-10 13:09:38 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.simbir.words.WordsApplication for test class com.simbir.words.WordsApplicationTests
-2023-03-10 13:09:38 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
-2023-03-10 13:09:38 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@1ac3a6f, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@fee7ca, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@29c80149, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@14ad42, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@608b906d, org.springframework.test.context.support.DirtiesContextTestExecutionListener@173cfb01, org.springframework.test.context.transaction.TransactionalTestExecutionListener@7e1762e6, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@5bccaedb, org.springframework.test.context.event.EventPublishingTestExecutionListener@67784537, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@17ec5e2a, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@52290e63, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@6c2dd88b, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@49d979c4, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@3cb173db, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@26712838]
-2023-03-10 13:09:39 [main] INFO  c.simbir.words.WordsApplicationTests - Starting WordsApplicationTests using Java 18.0.2 on WIN-6A6S5HBJLLL with PID 5936 (started by User in C:\Hobby\Git\SimbirSoftTestJavaAndReact)
-2023-03-10 13:09:39 [main] INFO  c.simbir.words.WordsApplicationTests - No active profile set, falling back to default profiles: default
-2023-03-10 13:09:40 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
-2023-03-10 13:09:40 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 26 ms. Found 1 MongoDB repository interfaces.
-2023-03-10 13:09:40 [main] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
-2023-03-10 13:09:40 [cluster-ClusterId{value='640ae5c45ed8b25d84d4cfea', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Exception in monitor thread while connecting to server localhost:27017
-com.mongodb.MongoSocketOpenException: Exception opening socket
-	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:70)
-	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:180)
-	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:188)
+2023-03-17 13:27:13 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2023-03-17 13:27:14 [restartedMain] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+2023-03-17 13:27:16 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2023-03-17 13:27:16 [restartedMain] INFO  com.simbir.words.WordsApplication - Started WordsApplication in 8.822 seconds (JVM running for 12.503)
+2023-03-17 13:29:33 [cluster-ClusterId{value='641424609372cf0f50baf409', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:29, serverValue:1}] to localhost:27017
+2023-03-17 13:29:33 [cluster-ClusterId{value='641424609372cf0f50baf409', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=17, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=78340300}
+2023-03-17 13:29:33 [cluster-rtt-ClusterId{value='641424609372cf0f50baf409', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:30, serverValue:2}] to localhost:27017
+2023-03-17 13:29:35 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-17 13:29:35 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-03-17 13:29:35 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 4 ms
+2023-03-17 13:30:31 [main] INFO  c.s.w.request.RequestControllerTest - Starting RequestControllerTest using Java 18.0.2 on WIN-6A6S5HBJLLL with PID 7328 (started by User in C:\Hobby\Git\SimbirSoftTestJavaAndReact)
+2023-03-17 13:30:31 [main] INFO  c.s.w.request.RequestControllerTest - No active profile set, falling back to default profiles: default
+2023-03-17 13:30:43 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2023-03-17 13:30:43 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 379 ms. Found 1 MongoDB repository interfaces.
+2023-03-17 13:30:47 [main] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2023-03-17 13:30:48 [cluster-rtt-ClusterId{value='64142537af35be395305c134', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:2, serverValue:3}] to localhost:27017
+2023-03-17 13:30:48 [cluster-ClusterId{value='64142537af35be395305c134', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:4}] to localhost:27017
+2023-03-17 13:30:48 [cluster-ClusterId{value='64142537af35be395305c134', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=17, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=156516300}
+2023-03-17 13:30:55 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+2023-03-17 13:31:00 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2023-03-17 13:31:00 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2023-03-17 13:31:00 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 4 ms
+2023-03-17 13:31:01 [main] INFO  c.s.w.request.RequestControllerTest - Started RequestControllerTest in 34.075 seconds (JVM running for 44.639)
+2023-03-17 13:31:01 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2023-03-17 13:31:01 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2023-03-17 13:31:01 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 6 ms
+2023-03-17 13:31:05 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2023-03-17 13:31:05 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2023-03-17 13:31:05 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 4 ms
+2023-03-17 16:13:43 [cluster-ClusterId{value='641424609372cf0f50baf409', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Exception in monitor thread while connecting to server localhost:27017
+com.mongodb.MongoSocketReadTimeoutException: Timeout while receiving message
+	at com.mongodb.internal.connection.InternalStreamConnection.translateReadException(InternalStreamConnection.java:701)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:579)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveCommandMessageResponse(InternalStreamConnection.java:415)
+	at com.mongodb.internal.connection.InternalStreamConnection.receive(InternalStreamConnection.java:374)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:216)
 	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:152)
 	at java.base/java.lang.Thread.run(Thread.java:833)
-Caused by: java.net.ConnectException: Connection refused: no further information
-	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
-	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
-	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:539)
-	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:594)
-	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
-	at java.base/java.net.Socket.connect(Socket.java:633)
-	at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:107)
-	at com.mongodb.internal.connection.SocketStream.initializeSocket(SocketStream.java:79)
-	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:65)
-	... 4 common frames omitted
-2023-03-10 13:09:42 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
-2023-03-10 13:09:45 [main] INFO  c.simbir.words.WordsApplicationTests - Started WordsApplicationTests in 6.142 seconds (JVM running for 27.034)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.base/sun.nio.ch.NioSocketImpl.timedRead(NioSocketImpl.java:280)
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:306)
+	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:347)
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:800)
+	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:966)
+	at com.mongodb.internal.connection.SocketStream.read(SocketStream.java:109)
+	at com.mongodb.internal.connection.SocketStream.read(SocketStream.java:131)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveResponseBuffers(InternalStreamConnection.java:718)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:576)
+	... 5 common frames omitted
+2023-03-17 16:13:43 [cluster-ClusterId{value='641424609372cf0f50baf409', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:31, serverValue:5}] to localhost:27017
+2023-03-17 16:13:43 [cluster-ClusterId{value='641424609372cf0f50baf409', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=17, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=30372200}

@@ -15,7 +15,7 @@ import javax.annotation.PostConstruct;
 
 @SpringBootTest
  @AutoConfigureMockMvc
-public abstract class AbstractBaseClass {
+public abstract class AbstractBase {
 
     private static final CharacterEncodingFilter CHARACTER_ENCODING_FILTER = new CharacterEncodingFilter();
 
